@@ -4,7 +4,7 @@ public class author {
     public String authorFirstName;
     public String authorSecondName;
 
-    public Author(String authorFirstName, String authorSecondName) {
+    public author(String authorFirstName, String authorSecondName) {
         this.authorFirstName = authorFirstName;
         this.authorSecondName = authorSecondName;
     }
