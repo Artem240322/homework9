@@ -7,9 +7,9 @@ public class Main {
     System.out.println("Автор книги " + firstAuthor.getAuthorFirstName() + firstAuthor.getAuthorSecondName());
     Book firstBook = new Book("Книга с названием", firstAuthor,1950);
     System.out.println("Год издания был = " + firstBook.getPublishingYear());
-    firstBook.getPublishingYear(2022);
+    firstBook.getPublishingYear();
     System.out.println("Год издания стал =" + firstBook.getPublishingYear());
-    System.out.println(firstBook.getBookName() + " " + firstBook.getNameaAuthor().getAuthorFirstName() + " " + firstBook.getPublishingYear());
+    System.out.println(firstBook.getBookName() + " " + firstBook.getAuthorName().getAuthorName() + " " + firstBook.getPublishingYear());
 
     }
 }
