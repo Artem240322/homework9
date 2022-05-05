@@ -39,5 +39,6 @@ public class Book {
 
     }
     @Override
-    public int hashCod() {return Object.hash(bookName, authorName, publishingYear); }
+    public int hashCod() {return Object.hash(bookName, authorName, publishingYear);
+    }
 }
