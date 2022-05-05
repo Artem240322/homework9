@@ -31,6 +31,7 @@ public class author {
         if (o == null || getClass() != o.getClass()) return false;
         author author = (author) o;
         return authorFirstName.equals(author.authorFirstName) && authorSecondName.equals(authorSecondName);
+
     }
     @Override
     public int hashCode() {return Object.hash(authorFirstName, authorSecondName);
