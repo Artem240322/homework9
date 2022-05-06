@@ -26,7 +26,6 @@ public class Main {
         System.out.println("Одинаковая книга? " + firstBook.equals(firstBook_1));
 
         firstBook.setPublishingYear(1975);
-
         System.out.println(firstBook.hashCode());
         System.out.println(firstBook_1.hashCode());
     }
