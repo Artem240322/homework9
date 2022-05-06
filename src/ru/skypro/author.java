@@ -1,5 +1,7 @@
 package ru.skypro;
 
+import java.util.Objects;
+
 public class author {
     public String authorFirstName;
     public String authorSecondName;
@@ -33,7 +35,9 @@ public class author {
         return authorFirstName.equals(author.authorFirstName) && authorSecondName.equals(authorSecondName);
 
     }
-    @Override
-    public int hashCode() {return Object.hash(authorFirstName, authorSecondName);
+    ///@Override
+    public int hashCode() {
+        return Objects.hash(authorFirstName, authorSecondName);
+
     }
 }

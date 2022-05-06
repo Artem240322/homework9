@@ -1,5 +1,7 @@
 package ru.skypro;
 
+import java.util.Objects;
+
 public class Book {
     private final String bookName;
     public author authorName;
@@ -39,6 +41,7 @@ public class Book {
 
     }
     @Override
-    public int hashCod() {return Object.hash(bookName, authorName, publishingYear);
+    public int hashCode() {
+        return Objects.hash(bookName, authorName, publishingYear);
     }
 }

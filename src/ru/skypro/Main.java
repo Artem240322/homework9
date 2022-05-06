@@ -27,7 +27,7 @@ public class Main {
 
         firstBook.setPublishingYear(1955);
 
-        System.out.println(firstBook.hashCod());
-        System.out.println(firstBook_1.hashCod());
+        System.out.println(firstBook.hashCode());
+        System.out.println(firstBook_1.hashCode());
     }
 }
