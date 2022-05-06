@@ -1,19 +1,29 @@
 package ru.skypro;
 
-public class author {
-    public String authorFirstName;
-    public String authorSecondName;
+import java.util.Objects;
 
-    public author(String authorFirstName, String authorSecondName) {
+public class Author {
+
+    private String authorFirstName;
+    private String authorSecondName;
+
+
+    public Author(String authorFirstName, String authorSecondName) {
         this.authorFirstName = authorFirstName;
         this.authorSecondName = authorSecondName;
     }
 
-    public String getAuthorName() {return authorFirstName + authorSecondName;}
+    public String getAuthorName() {
+        return authorFirstName + authorSecondName;
+    }
 
-    public String getAuthorFirstName() {return authorFirstName;}
+    public String getAuthorFirstName() {
+        return authorFirstName;
+    }
 
-    public String getAuthorSecondName() {return  authorSecondName;}
+    public String getAuthorSecondName() {
+        return  authorSecondName;
+    }
 
 
     /// ДЗ Методы обьектов
@@ -29,12 +39,12 @@ public class author {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        author author = (author) o;
+        Author author = (Author) o;
         return authorFirstName.equals(author.authorFirstName) && authorSecondName.equals(authorSecondName);
 
     }
     @Override
-    public int hashCode() {return Object.hash(authorFirstName, authorSecondName);
-
+    public int hashCode() {
+        return Objects.hash(authorFirstName, authorSecondName);
     }
 }
